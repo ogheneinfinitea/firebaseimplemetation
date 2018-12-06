@@ -49,8 +49,8 @@ public class lecturer_profile extends AppCompatActivity {
     String email = edtttextEmail.getText().toString();
     String phone = edttextPhone.getText().toString();
 
-    getlecturer get = new getlecturer(Staff_id, address,name,email,phone);
-       
+    getlecturer getlecturer = new getlecturer(Staff_id, address,name,email,phone);
+    notebookRef.add(getlecturer);
 
 
 
