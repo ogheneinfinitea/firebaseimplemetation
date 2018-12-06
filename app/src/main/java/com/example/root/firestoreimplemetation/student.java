@@ -39,7 +39,7 @@ public class student extends AppCompatActivity {
         edttextsLevel = (EditText) findViewById(R.id.edttextsLevel);
 
     }
-    public void staff_btnSave(View v){
+    public void student_btnsave(View v){
 
         String regno = edttextsReg_no.getText().toString();
         String address = edttextsAddress.getText().toString();
