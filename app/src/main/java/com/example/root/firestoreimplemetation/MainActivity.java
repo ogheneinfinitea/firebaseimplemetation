@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText edttextcourse_id;
     private EditText edttextcourse_name;
-  private TextView textViewData;
+    private TextView textViewData;
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private CollectionReference notebookRef = db.collection("Course");
@@ -72,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
                         String documentId = note.getDocumentId();
                         String title = note.getTitle();
                         String description = note.getDescription();
+
+
+
 
                         data += "ID: " + documentId
                                 + "\nTitle: " + title + "\nDescription: " + description + "\n\n";
@@ -113,5 +116,10 @@ public class MainActivity extends AppCompatActivity {
                             textViewData.setText(data);
                         }
                     });
+        }
+
+        public void searchcourse(){
+
+
         }
     }

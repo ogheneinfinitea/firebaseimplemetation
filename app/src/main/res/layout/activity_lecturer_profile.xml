@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lecturer_profile">
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edttextStaffid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint=" Enter Your Staff Id"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edttextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint=" Enter Your Name"
+        android:padding="10dp"/>
+
+
+    <EditText
+        android:id="@+id/edttextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint=" Enter Your Phone Number"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/edttextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Enter Your Address"
+        android:padding="10dp"/>
+
+
+    <EditText
+        android:id="@+id/edttextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="EnteR Your Email"
+        android:inputType="textPassword"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="SAVE"
+            android:textColor="@color/colorWhite"
+            android:onClick="staff_btnSave"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="UPDATE"
+            android:textColor="@color/colorWhite"
+            android:onClick="staff_btnUpdate"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="SEARCH"
+            android:textColor="@color/colorWhite"
+            android:onClick="staff_btnSearch"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="DELETE"
+            android:textColor="@color/colorWhite"
+            android:onClick="staff_btnDelete"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
