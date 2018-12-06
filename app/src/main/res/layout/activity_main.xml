@@ -32,7 +32,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnSave_Course"
+            android:onClick="addCourse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -42,46 +42,32 @@
             android:textColor="@color/colorWhite"
             />
         <Button
-            android:id="@+id/btnUpdate_Course"
+            android:onClick="loadCourse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="UPDATE"
+            android:text="LOAD"
             android:textColor="@color/colorWhite"
             />
 
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnSearch_Course"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:text="SEARCH"
-            android:textColor="@color/colorWhite"
-            />
-        <Button
-            android:id="@+id/btnDelete_Course"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:text="DELETE"
-            android:textColor="@color/colorWhite"
-            />
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/text_view_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
 
+        </android.support.v4.widget.NestedScrollView>
     </LinearLayout>
 
 
